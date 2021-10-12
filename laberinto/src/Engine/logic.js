@@ -56,6 +56,7 @@
 
         //showRemaining();
         updateClock();
+        
     }
 
     function initializeScene() {
@@ -68,7 +69,7 @@
 
         var floorGeometry = new THREE.BoxGeometry(platformWidth, 5, platformHeight);
         var ground = new THREE.Mesh(floorGeometry, new THREE.MeshPhongMaterial({
-            map: loader.load("assets/images/textures/ground_diffuse.jpg"),
+            map: loader.load("assets/images/textures/ground_diffuse2.jpg"),
         }));
 
         repeatTexture(ground.material.map, 2);
@@ -308,6 +309,7 @@
     function launch() {
         initializeScene();
         mainLoop();
+        
     }
 
     window.onload = function() {

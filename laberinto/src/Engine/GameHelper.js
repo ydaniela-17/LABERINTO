@@ -20,6 +20,8 @@ Demonixis.GameHelper.LevelHelper = function(start, end) {
             this.next++;
             this.cir++;
             document.getElementById('circle'+ this.cir).innerHTML = '<img src="assets/images/circle-win.png" />';
+            
+    document.getElementById("pist").play();
         }
 
         return this.current;

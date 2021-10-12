@@ -1,4 +1,4 @@
-/** @namespace */
+/** @ddd */
 var Demonixis = Demonixis || {};
 
 Demonixis.Input = function() {
