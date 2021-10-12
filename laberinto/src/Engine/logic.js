@@ -236,11 +236,8 @@
         if (map[newTy][newTx] != 1 && !isNaN(map[newTy][newTx])) {
             collides = true;
         } else if (map[newTy][newTx] == "A") {
-            // Game is over
             running = false;
-        } else if (map[newTy][newTx] == "J") {
-            running = false;
-        }
+        } 
 
         if (collides == false) {
             camera.rotation.y = rotation;
