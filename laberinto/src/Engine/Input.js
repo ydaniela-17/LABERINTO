@@ -1,7 +1,7 @@
 /** @ddd */
-var Demonixis = Demonixis || {};
+var laberinto = laberinto || {};
 
-Demonixis.Input = function() {
+laberinto.Input = function() {
     this.keys = {
         up: false,
         down: false,
@@ -125,7 +125,7 @@ Demonixis.Input = function() {
     }
 };
 
-Demonixis.Input.prototype.destroy = function() {
+laberinto.Input.prototype.destroy = function() {
     document.removeEventListener('keydown', this._onKeyboardDown, false);
     document.removeEventListener('keyup', this._onKeyboardUp, false);
 
@@ -137,7 +137,7 @@ Demonixis.Input.prototype.destroy = function() {
     }
 };
 
-Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
+laberinto.Input.prototype._onKeyStateChange = function(event, pressed) {
     event.preventDefault();
 
     switch (event.keyCode) {
@@ -309,7 +309,7 @@ Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
     }
 };
 
-Demonixis.Input.prototype._onJoykeyStateChange = function(event, pressed) {
+laberinto.Input.prototype._onJoykeyStateChange = function(event, pressed) {
     event.preventDefault();
     var id = event.currentTarget.id;
 
@@ -375,6 +375,6 @@ Demonixis.Input.prototype._onJoykeyStateChange = function(event, pressed) {
     }
 };
 
-Demonixis.Input.prototype.pressed = function(key) {
+laberinto.Input.prototype.pressed = function(key) {
     return this.keys[key];
 };

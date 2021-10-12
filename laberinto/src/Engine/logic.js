@@ -24,9 +24,9 @@
 
         document.getElementById("canvasContainer").appendChild(renderer.domElement);
 
-        input = new Demonixis.Input();
-        levelHelper = new Demonixis.GameHelper.LevelHelper();
-        cameraHelper = new Demonixis.GameHelper.CameraHelper(camera);
+        input = new laberinto.Input();
+        levelHelper = new laberinto.GameHelper.LevelHelper();
+        cameraHelper = new laberinto.GameHelper.CameraHelper(camera);
 
         window.addEventListener("resize", function() {
             renderer.setSize(window.innerWidth, window.innerHeight);
@@ -60,7 +60,7 @@
     }
 
     function initializeScene() {
-        miniMap = new Demonixis.Gui.MiniMap(map[0].length, map.length, "canvasContainer");
+        miniMap = new laberinto.Gui.MiniMap(map[0].length, map.length, "canvasContainer");
         miniMap.create();
 
         var loader = new THREE.TextureLoader();

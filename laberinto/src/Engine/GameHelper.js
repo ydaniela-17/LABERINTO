@@ -1,7 +1,7 @@
-var Demonixis = window.Demonixis || {};
-Demonixis.GameHelper = Demonixis.GameHelper || {};
+var laberinto = window.laberinto || {};
+laberinto.GameHelper = laberinto.GameHelper || {};
 
-Demonixis.GameHelper.LevelHelper = function(start, end) {
+laberinto.GameHelper.LevelHelper = function(start, end) {
     this.current = start || 1;
     this.next = this.current + 1;
     this.count = end || 5;
@@ -28,7 +28,7 @@ Demonixis.GameHelper.LevelHelper = function(start, end) {
     }
 };
 
-Demonixis.GameHelper.CameraHelper = function(camera) {
+laberinto.GameHelper.CameraHelper = function(camera) {
     this.translation = 5;
     this.rotation = 0.035;
     this.origin = {
