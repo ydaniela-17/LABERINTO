@@ -1,5 +1,7 @@
 # LABERINTO
 
+DESCRIPTION
+
 This game written in JavaScript for WebGL using THREE.js
 
 three.js is a lightweight library written in JavaScript to create and display 3D computer animated
@@ -15,3 +17,15 @@ At the beginning of the game, we can see the rendering of the textures represent
 When colliding with the walls, a sound is activated, evidencing the collision between the objects.
 A background sound was added to give the game a little more interactivity.
 
+CONTROLS
+
+Keyboard
+
+key up
+key down
+key right
+key left
+
+Mouse
+
+Pressed in the controlls show un screen
